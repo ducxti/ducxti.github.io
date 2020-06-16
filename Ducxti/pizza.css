@@ -44,7 +44,35 @@ nav{
        background-size: cover;
        background-position: center;
        color: white;
+       padding-top: 3rem;
+       padding-left: 2.5rem;
    }
    .bike-text{
        margin-top: 5rem;
    }
+ .sub{
+    margin-top: 5rem;
+ }
+ .podval{
+    background-color: black;
+    color: gray;
+    padding-bottom: 4rem;
+}
+.ducati{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+}
+.lic{
+    margin-top: 2rem;
+}
+.btn{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 5rem;
+    border: 1px solid black;
+}
+@media only screen and (min-width: 650px) {
+    .carousel-item{
+        max-height: 650px;
+        background-position: center center;
+    }
+}

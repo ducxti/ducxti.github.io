@@ -24,3 +24,23 @@ nav{
     color: white;
     margin-top: 30rem;
    }
+   .panitext{
+       margin-left: 12rem;
+   }
+   .podval{
+    background-color: black;
+    color: gray;
+    padding-bottom: 4rem;
+}
+.ducati{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+}
+.lic{
+    margin-top: 2rem;
+}
+.btn{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 5rem;
+    border: 1px solid black;
+}
