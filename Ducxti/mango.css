@@ -1,0 +1,26 @@
+.logo{
+    background-image: url(SLV4-Hero-01-Cupolino-1600x1000.jpg);
+    height: 1000px;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    background-position: center center;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+   }
+   .lego{
+       margin-top: 2.5rem;
+       font-family: 'Righteous', cursive;
+   }
+   .menu{
+    font-family: 'Abel', sans-serif;
+   }
+   .text-caption{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin-top: 30rem;
+   }
