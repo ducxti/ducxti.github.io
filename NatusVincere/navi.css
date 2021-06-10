@@ -1,0 +1,320 @@
+body{
+  font-family: 'Jost', sans-serif;
+}
+.lenta{
+  font-family: 'Oswald', sans-serif;
+  color: rgb(255, 238, 0);
+  padding: 5px 10px 5px 20px;
+}
+.streams{
+  font-family: 'Oswald', sans-serif;
+  color: rgb(255, 238, 0);
+  padding: 25px 0px;
+}
+.videos{
+  font-family: 'Oswald', sans-serif;
+  color: rgb(255, 238, 0);
+  padding: 15px 0px;
+}
+.mn-txt{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 25px;
+}
+.card-txt{
+  font-family: 'Rubik', sans-serif;
+}
+.bg-fixed{
+  background-image:url(stadionNaVi.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: cover;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+  .menu-btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 60;
+    right:5px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+   
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(180deg, #E2E2E2, #C9D6FF);
+    transition-duration: .25s;
+  }
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+   
+  .menubox{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 283px;
+    height: 100%;
+    margin: 0;
+    padding: 50px 0 0 0;
+    list-style: none;
+    z-index: 100;
+    overflow-y: auto;
+    background:linear-gradient(180deg, #E2E2E2, #C9D6FF);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+  }
+
+  .menu-item {
+    margin-top: 5px;
+    display: block;
+    padding: 5px 10px 5px 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    margin-bottom: 1rem;
+  }
+  .menu-item:hover {
+    background: linear-gradient(#11998e, #FAFFD1);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #11998e;
+  }
+  #menu-toggle{
+    opacity: 0;
+  }
+   
+  #menu-toggle:checked ~ .menu-btn > span{
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::before{
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .menubox{
+    visibility: visible;
+    left: 0;
+  }
+nav {
+  z-index: 1;
+}
+
+.nav-item{
+  padding-left: 1.5rem;
+  margin-left: 2rem;
+}
+.menu-icon{
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(75, 75, 75);
+  z-index: -1;
+  font-size: 2rem;
+  margin-left: -10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  padding-bottom: 2rem;
+}
+
+.box a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(51, 51, 51);
+  margin: 0.3em;
+  background: rgb(236, 236, 236);
+  position: relative;
+  transition: all 0.4s;
+}
+.box a:hover {
+  transform: scale(0.9);
+}
+.box a::before {
+  /* content: attr(data-text); */
+  position: absolute;
+  top: 0;
+  left: 70px;
+  font-family: cursive;
+  border-radius: 50px;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  background: rgb(236, 236, 236);
+  display: none;
+}
+.box a:hover::before {
+  display: flex;
+}
+.box .steam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #000000, #003fec);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.box .insta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #cfd21c, #ff00d4);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.box .yt::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff0000, #ff0000);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.box .twitch::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #1c1fd2, #7f00d4);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.box a:hover::after {
+  transform: scale(0.8);
+}
+.box a i {
+  z-index: 20;
+  transition: all 0.4s;
+}
+.box a:hover i {
+  color: white;
+}
+
+.my-preloader{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader-span{
+  width: 10px;
+  height: 80px;
+  margin: 0 3px;
+  border-radius: 50px;
+}
+.preloader-span:nth-child(5){
+  background: #ff414d;
+  animation: anim 0.7s infinite;
+}
+.preloader-span:nth-child(4),.preloader-span:nth-child(6){
+  background: #821752;
+  animation: anim 0.8s infinite;
+}
+.preloader-span:nth-child(3),.preloader-span:nth-child(7){
+  background: #f0a500;
+  animation: anim 0.9s infinite;
+}
+.preloader-span:nth-child(2),.preloader-span:nth-child(8){
+  background: #07689f;
+  animation: anim 1s infinite;
+}
+.preloader-span:nth-child(1),.preloader-span:nth-child(9){
+  background: #00b7c2;
+  animation: anim 1.1s infinite;
+}
+@keyframes anim{
+  0%, 100%{ height: 30px;}
+  50%{height: 80px;}
+}
+@keyframes anim1{
+  0%, 100%{ height: 30px;}
+  50%{height: 100px;}
+}
+
+@keyframes anim2{
+  0%, 100%{ height: 30px;}
+  50%{height: 50px;}
+}
+
+@keyframes anim3{
+  0%, 100%{ height: 30px;}
+  50%{height: 90px;}
+}
+
+@keyframes anim4{
+  0%, 100%{ height: 30px;}
+  50%{height: 80px;}
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  z-index: 99999;
+  overflow: hidden;
+}

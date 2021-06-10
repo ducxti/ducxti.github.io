@@ -1,0 +1,51 @@
+.slider{
+    /* border: 3px solid grey; */
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+  
+  }
+  .slider-line{
+    display: flex;
+    transition: all ease 2s;
+  }
+  .slider-item{
+      position: relative;
+  }
+  .slider-image{
+      width: 100%;
+  }
+  .slider-text{
+      position: absolute;
+      bottom: 20px;
+      left: 2.5%;
+      text-align: center;
+      color: gainsboro;
+      padding: 20px;
+      width: 95%;
+      background-color: rgba(0, 0, 0, 0.507);
+  }
+  .button {
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      font-size: 25px;
+      z-index: 99;
+      color: white;
+      border: 0;
+      background-color: rgba(255, 0, 0, 0);
+  }
+  .slider-prev {
+      left: 5px;
+  }
+  .slider-next {
+      right: 5px;
+  }
+  .nav-item{
+      background-image: url();
+  }
+  .card{
+      border: 0;
+  }
